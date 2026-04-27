@@ -72,7 +72,7 @@
         let myPic = "";
 
         //TESTING ONLY REMOVE FOLLOWING LINE:
-        myHour = 19;
+        myHour = 2;
 
         if(myHour >= 5 && myHour < 12){
         mySentence = "Good Morning!";
@@ -91,21 +91,21 @@
 
 
         }else{
-        //alert("It's not after noon");
         mySentence = "Good Night!";
         myColor = "purple";
         myPic = "night.jpg";
 
         }
+
+        
         //adds sentence to page
         document.getElementById("time-text").innerHTML = mySentence;
         
         //adds color to html
         document.querySelector('html').style.backgroundColor = myColor;
 
+        //adds image path to pic
         myPic = "images/" + myPic;
-
-        console.log(myPic);
 
         //change to our pic
         document.getElementById("time-pic").src = myPic;
